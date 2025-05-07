@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Gracias por tu mensaje!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    video#fondo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .contenido {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(138, 43, 226, 0.4);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ce93d8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    a:hover {
+      background-color: #d9a7e1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reemplaza "fondo.mp4" por tu video real -->
+  <video autoplay muted loop id="fondo">
+    <source src="fondo.mp4" type="video/mp4">
+    Tu navegador no soporta video HTML5.
+  </video>
+
+  <div class="contenido">
+    <h1>¡Gracias por contactarnos!</h1>
+    <p>Hemos recibido tu mensaje. Nos pondremos en contacto pronto.</p>
+    <a href="principal.html">Volver al inicio</a>
+  </div>
+
+</body>
+</html>

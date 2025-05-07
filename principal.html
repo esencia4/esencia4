@@ -1,0 +1,169 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ventas</title>
+    <link rel="stylesheet" href="stye.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">
+            <img src="Logotipo para postres.jpg" alt="Logo de Empresa" class="logo-img">
+            <span class="empresa-nombre">Esencia de 4 flores</span> 
+        </div>
+
+        <img src="morado.png" alt="Fondo de tienda" class="header-img">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="mas_productos.html">Productos Exclusivos</a></li>
+                <li><a href="http://localhost/estructura/index.html">Acerca de nosotros</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+
+    <!-- Carrito flotante -->
+    <div id="carrito-flotante" class="carrito-flotante">
+        <a href="#carrito"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+</body>
+</html>
+
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <h2>Productos Destacados</h2>
+        <div class="producto-lista">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="eternas.jpeg" alt="Producto 1">
+                <h3>Producto 1 <p>Rosas eternas</p></h3>
+                <p>$10.00</p>
+                <div class="valoracion">
+                    <span class="estrellas">⭐⭐⭐⭐⭐</span> <!-- 5 estrellas -->
+                    <button class="btn-like">👍</button> <!-- Like -->
+                </div>
+                <button class="btn-agregar" data-producto="1">Agregar al Carrito</button>
+            </div>
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="tulipanes e.jpg" alt="Producto 2">
+                <h3>Producto 2 <p>Tulipanes encantados</p></h3>
+                <p>$15.00</p>
+                <div class="valoracion">
+                    <span class="estrellas">⭐⭐⭐⭐</span> 
+                    <button class="btn-like">👍</button> 
+                </div>
+                <button class="btn-agregar" data-producto="2">Agregar al Carrito</button>
+            </div>
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="caja de g.jpg" alt="Producto 3">
+                <h3>Producto 3 <p>Caja de Girasoles</p></h3>
+                <p>$20.00</p>
+                <div class="valoracion">
+                    <span class="estrellas">⭐⭐⭐⭐⭐</span> 
+                    <button class="btn-like">👍</button> 
+                </div>
+                <button class="btn-agregar" data-producto="3">Agregar al Carrito</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="orquideas.jpg" alt="Producto 4">
+                <h3>Producto 4 <p>Orquideas premium</p></h3>
+                <p>$25.00</p>
+                <div class="valoracion">
+                    <span class="estrellas">⭐⭐⭐⭐</span> <!-- 4 estrellas -->
+                    <button class="btn-like">👍</button> <!-- Like -->
+                </div>
+                <button class="btn-agregar" data-producto="4">Agregar al Carrito</button>
+            </div>
+
+<!-- Producto 5 -->
+<div class="producto">
+    <img src="bouquet.jpg" alt="Producto 4">
+    <h3>Producto 5 <p>bouquet sorpresa</p></h3>
+    <p>$35.00</p>
+    <div class="valoracion">
+        <span class="estrellas">⭐⭐⭐⭐</span> 
+        <button class="btn-like">👍</button> 
+    </div>
+    <button class="btn-agregar" data-producto="4">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 6 -->
+<div class="producto">
+    <img src="arreglo.jpg" alt="Producto 4">
+    <h3>Producto 6 <p>Arreglo Romantico</p></h3>
+    <p>$45.00</p>
+    <div class="valoracion">
+        <span class="estrellas">⭐⭐⭐⭐</span> <!-- 4 estrellas -->
+        <button class="btn-like">👍</button> <!-- Like -->
+    </div>
+    <button class="btn-agregar" data-producto="4">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 7 -->
+<div class="producto">
+    <img src="florero.jpg" alt="Producto 4">
+    <h3>Producto 7 <p>Florero Minimalista</p></h3>
+    <p>$20.00</p>
+    <div class="valoracion">
+        <span class="estrellas">⭐⭐⭐⭐</span> <!-- 4 estrellas -->
+        <button class="btn-like">👍</button> <!-- Like -->
+    </div>
+    <button class="btn-agregar" data-producto="4">Agregar al Carrito</button>
+</div>
+
+<!-- Producto 8 -->
+<div class="producto">
+    <img src="florero camp.jpg" alt="Producto 4">
+    <h3>Producto 8 <p>Canasta camprestre</p></h3>
+    <p>$60.00</p>
+    <div class="valoracion">
+        <span class="estrellas">⭐⭐⭐⭐</span> <!-- 4 estrellas -->
+        <button class="btn-like">👍</button> <!-- Like -->
+    </div>
+    <button class="btn-agregar" data-producto="4">Agregar al Carrito</button>
+</div>
+
+
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+<section id="carrito" class="carrito">
+    <h2>Carrito de Compras</h2>
+    <div id="carrito-items">
+        <!-- Aquí se agregarán los productos seleccionados -->
+    </div>
+    <a href="http://localhost/mi_proyecto.html/finalizar_compra.html" class="btn-finalizar-compra">Finalizar Compra</a>
+</section>
+
+    
+    
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; .</p>
+    </footer>
+
+    <!-- Carrito flotante -->
+    <div id="carrito-flotante" class="carrito-flotante">
+        <a href="#carrito"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+   
+
+    <script src="java.js"></script>
+</body>
+</html>

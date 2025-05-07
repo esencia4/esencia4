@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Video de fondo -->
+    <video class="video-background" autoplay muted loop>
+        <source src="Diseño sin título (1).mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <!-- Contenedor principal -->
+    <div class="welcome-container">
+        <div>
+            <h1 class="welcome-title">¡Bienvenid@ a Esencia de cuatro flores!</h1>
+
+            <!-- Formulario de bienvenida -->
+            <div class="form-container">
+                <h2>Accede a nuestro sitio</h2>
+                <form action="procear.php" method="POST">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Acceder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

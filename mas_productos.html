@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - Esencia de 4 Flores</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f3e5f5, #fce4ec);
+      color: #4a148c;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 32px;
+      color: #6a1b9a;
+    }
+
+    .carrusel-contenedor {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 20px;
+      padding: 40px;
+      scroll-behavior: smooth;
+    }
+
+    .producto {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      width: 300px;
+      min-height: 420px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      color: #8e24aa;
+    }
+
+    .producto p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .precio {
+      font-size: 16px;
+      color: #d81b60;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .producto a {
+      display: inline-block;
+      background-color: #ab47bc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+
+    .producto a:hover {
+      background-color: #8e24aa;
+    }
+
+    .volver-btn {
+      display: block;
+      text-align: center;
+      margin: 40px auto;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      width: fit-content;
+    }
+
+    .volver-btn:hover {
+      background-color: #4a148c;
+    }
+
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #ce93d8;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background-color: #f3e5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Productos Exclusivos</h1>
+
+  <div class="carrusel-contenedor">
+    <div class="producto">
+      <img src="rosas encantadas.jpg"
+      <p>Rosas frescas y fragantes para momentos especiales.</p>
+      <p class="precio">RD$ 1,200.00</p>
+      <a href="finalizar_compra.html?producto=Rosas+Encantadas">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="orquidea real.jpg" alt="Orquídea Real">
+      <h3>Orquídea Real</h3>
+      <p>Flor exótica y elegante para regalos inolvidables.</p>
+      <p class="precio">RD$ 1,800.00</p>
+      <a href="finalizar_compra.html?producto=Orquidea+Real">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="lirios divinos.jpg" alt="Lirios Divinos">
+      <h3>Lirios Divinos</h3>
+      <p>Color, perfume y estilo para decorar tu hogar.</p>
+      <p class="precio">RD$ 1,100.00</p>
+      <a href="finalizar_compra.html?producto=Lirios+Divinos">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="tulipanes reales.jpg" alt="Tulipanes Reales">
+      <h3>Tulipanes Reales</h3>
+      <p>Brillantes y frescos. Elige elegancia.</p>
+      <p class="precio">RD$ 950.00</p>
+      <a href="finalizar_compra.html?producto=Tulipanes+Reales">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="flor luna.jpg" alt="Flor Luna">
+      <h3>Flor Luna</h3>
+      <p>Blanca y pura. Inspiración celestial.</p>
+      <p class="precio">RD$ 1,300.00</p>
+      <a href="finalizar_compra.html?producto=Flor+Luna">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="violetas magicas.jpg" alt="Violetas Mágicas">
+      <h3>Violetas Mágicas</h3>
+      <p>Perfectas para dar color y alegría.</p>
+      <p class="precio">RD$ 850.00</p>
+      <a href="finalizar_compra.html?producto=Violetas+Magicas">Comprar</a>
+    </div>
+
+    <div class="producto">
+      <img src="flor imperial.jpg" alt="Flor Imperial">
+      <h3>Flor Imperial</h3>
+      <p>Edición limitada para amantes del lujo floral.</p>
+      <p class="precio">RD$ 2,200.00</p>
+      <a href="finalizar_compra.html?producto=Flor+Imperial">Comprar</a>
+    </div>
+  </div>
+
+  <a href="principal.html" class="volver-btn">Volver al inicio</a>
+
+</body>
+</html>
